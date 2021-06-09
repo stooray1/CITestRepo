@@ -3,8 +3,10 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
-      - name: Prepare repo
-        uses: actions/checkout@master
-      - name: Test
+    steps:      
+      - name: Checkout
+        run: git checkout master
+      - name: Dir
         run: dir
+      - name: Test
+        run: python test_Car.py
