@@ -11,4 +11,4 @@ jobs:
       - name: Dir_T
         run: dir
       - name: Test
-        run: python test_Car.py
+        run: python -m unittest test_Car.py
