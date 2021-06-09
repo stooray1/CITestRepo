@@ -45,10 +45,10 @@ class TestBrake(TestCar):
             self.car.brake()
         self.assertEqual(self.car.speed, 10)
 
-    # def test_should_not_allow_negative_speed(self):
-    #     self.car.brake()
-    #     self.assertEqual(self.car.speed, 0)
-    #
+    def test_should_not_allow_negative_speed(self):
+        self.car.brake()
+        self.assertEqual(self.car.speed, 0)
+
     # def test_multiple_brakes_at_zero(self):
     #     for _ in range(3):
     #         self.car.brake()
