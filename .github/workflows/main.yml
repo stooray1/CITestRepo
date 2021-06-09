@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: 'master'
-      - name: Dir_T
+      - name: Dir
         run: dir
       - name: Test
         run: python -m unittest test_Car.py
